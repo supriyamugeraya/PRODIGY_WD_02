@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --custom-bg-color: #2f838d; 
+    
+     --custom-bg-color: #88b7d7; /* HEX value */
+     --custom-bg-color: rgb(32, 85, 120); /* RGB value */
+    --custom-bg-color: hsl(204, 38%, 36%); /* HSL value */
+}
+
+body {
+    background-color: var(--custom-bg-color);
+}
+
+.container {
+    background-color: #ffffff;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-60%, -60%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(122, 65, 65, 0.338);
+}
+
+.timer-display {
+    position: relative;
+    width: 92%;
+    background: #1a0e17;
+    left: 4%;
+    font-family: 'Roboto mono', monospace;
+    color: #d1ccdd;
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(54, 68, 146, 0.25);
+}
+
+.buttons {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 115px;
+    height: 45px;
+    background-color: #18205a;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 9px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:nth-last-child(3) {
+    background-color: #e309a2;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #1ef746;
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #FF9900;
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px rgba(66, 14, 14, 0.25);
+}
+
+.laps {
+    position: relative;
+    width: 85%;
+    background: #1a0e17;
+    left: 7.5%;
+    font-family: 'Roboto mono', monospace;
+    color: #e9e5f0;
+    font-size: 15spx;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(54, 68, 146, 0.25);
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#laps-list {
+    width: 50%;
+    list-style-type: disc;
+    padding-left: 40px; /* Adjusts bullet points */
+}
+
+#laps-list li {
+    text-align: center;
+    margin-bottom: 10px;
+}
